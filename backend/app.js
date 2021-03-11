@@ -6,7 +6,7 @@ var logger = require('morgan');
 var cors = require('cors');
 
 const corsOptions = {
-  origin: 'http://localhost:3001'
+  origin: 'http://localhost:3000'
 }
 
 var usersRouter = require('./routes/users');
