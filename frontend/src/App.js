@@ -13,7 +13,7 @@ class App extends React.Component {
 
 
   componentDidMount() {
-    fetch('http://localhost:3000/users')
+    fetch('http://ec2-13-59-178-65.us-east-2.compute.amazonaws.com:3000/users')
       .then(response => response.json())
       .then(data => this.setState({users: data}));
   }
