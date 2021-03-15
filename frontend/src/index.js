@@ -3,6 +3,18 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import Amplify from 'aws-amplify';
+import awsConfiguration from './awsConfiguration';
+
+
+Amplify.configure({
+  Auth: {
+    identityPoolId: awsConfiguration.IdentityPoolId,
+    region: awsConfiguration.region,
+    userPoolId: awsConfiguration.UserPoolId,
+    userPoolWebClientId: awsConfiguration.ClientId
+  }
+});
 
 ReactDOM.render(
   <React.StrictMode>

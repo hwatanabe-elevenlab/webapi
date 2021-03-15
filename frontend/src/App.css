@@ -36,3 +36,21 @@
     transform: rotate(360deg);
   }
 }
+
+textarea {
+  width: 600px;
+  height: 200px;
+}
+
+form {
+  text-align: left;
+}
+
+input {
+  width: 300px;
+  height: 25px;
+}
+
+button {
+  margin-right: 10px;
+}

@@ -39,5 +39,41 @@
       To begin the development, run `npm start` or `yarn start`.
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
+    <span class="yconnectLogin"></span>
+
+    <script type="text/javascript">
+      window.yconnectInit = function() {
+          YAHOO.JP.yconnect.Authorization.init({
+              button: {
+                  format: "image",
+                  type: "a",
+                  textType:"a",
+                  width: 196,
+                  height: 38,
+                  className: "yconnectLogin"
+              },
+              authorization: {
+                  clientId: "dj00aiZpPVNVaUVwU05CYldGbiZzPWNvbnN1bWVyc2VjcmV0Jng9ODE-",
+                  redirectUri: "http://localhost:3000/",
+                  scope: "openid email profile address",
+                  state: "aaaa",
+                  nonce: "aaaa",
+                  windowWidth: "500",
+                  windowHeight: "400"
+              },
+              onError: function(res) {
+                  // エラー発生時のコールバック関数
+              },
+              onCancel: function(res) {
+                  // 同意キャンセルされた時のコールバック関数
+              }
+          });
+      };
+      (function(){
+      var fs = document.getElementsByTagName("script")[0], s = document.createElement("script");
+      s.setAttribute("src", "https://s.yimg.jp/images/login/yconnect/auth/2.0.3/auth-min.js");
+      fs.parentNode.insertBefore(s, fs);
+      })();
+    </script>
   </body>
 </html>
