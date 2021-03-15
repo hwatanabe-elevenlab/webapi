@@ -239,19 +239,19 @@ class App extends React.Component {
         <header className="App-header">
           <form>
             <label>ユーザ名</label><br></br>
-            <input type="text" placeholder="Username" onChange={this.changedUsernameHandler} /><input readOnly value="hwatanabe.elevenlab"></input><br></br>
+            <input type="text" placeholder="Username" onChange={this.changedUsernameHandler} /><input readOnly value=""></input><br></br>
 
             <label>パスワード</label><br></br>
-            <input type="password" placeholder="Password" onChange={this.changedPasswordHandler} /><input readOnly value="58dG%kBM3811"></input><br></br>
+            <input type="password" placeholder="Password" onChange={this.changedPasswordHandler} /><input readOnly value=""></input><br></br>
 
             <label>メールアドレス</label><br></br>
-            <input type="email" placeholder="Email" onChange={this.changedEmailHandler} /><input readOnly value="hwatanabe.elevenlab@gmail.com"></input><br></br>
+            <input type="email" placeholder="Email" onChange={this.changedEmailHandler} /><input readOnly value=""></input><br></br>
 
             <label>電話番号</label><br></br>
-            <input type="text" placeholder="Phone number" onChange={this.changedPhoneNumberHandler} /><input readOnly value="+819060015348"></input><br></br>
+            <input type="text" placeholder="Phone number" onChange={this.changedPhoneNumberHandler} /><input readOnly value=""></input><br></br>
 
             <label>氏名</label><br></br>
-            <input type="text" placeholder="Name" onChange={this.changedNameHandler} /><input readOnly value="試験太郎"></input><br></br>
+            <input type="text" placeholder="Name" onChange={this.changedNameHandler} /><input readOnly value=""></input><br></br>
 
             <label>SMS認証コード</label><br></br>
             <input type="text" placeholder="SMS Code" onChange={this.changedSMSCodeHandler} /><br></br>
